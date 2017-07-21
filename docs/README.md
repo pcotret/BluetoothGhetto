@@ -1,0 +1,1 @@
+# ledstrip directory contains the Arduino code. *.fzz have to be opened with Fritzing
