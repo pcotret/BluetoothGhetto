@@ -57,7 +57,7 @@ We decided to use an Arduino Nano as in the schematic below, it turns out that e
 
 The Arduino code implemented in the Arduino is available here:
 
-'''C++
+```C++
 // Libraries
 #include <Adafruit_NeoPixel.h>
 
@@ -190,7 +190,7 @@ void loop()
   strip.setBrightness(50); // Set the strip brightness
   delay(1000); 
 }
-'''
+```
 
 ## References
 * http://www.instructables.com/id/LED-Color-Organ-Triple-Deluxe/
