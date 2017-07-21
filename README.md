@@ -62,7 +62,7 @@ The Arduino code implemented in the Arduino is available here: https://github.co
 #include <Adafruit_NeoPixel.h>
 
 // Constants
-#define PIN 4
+#define PIN 13
 #define BFSENSOR 2
 #define HFSENSOR 1
 
