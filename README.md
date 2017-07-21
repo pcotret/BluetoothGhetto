@@ -1,8 +1,8 @@
-![bluetoothghetto](https://bytebucket.org/pcotret/bluetoothghetto/raw/41c634f787a87c1103966e4d3363ceb837f6b5ee/img/bluetoothghetto.png?token=db6b8e2238ab4a7b8736e524e3a8896431a36637)
-# BluetoothGhetto – A tiny Bluetooth-enabled ghetto blaster
+![bluetoothghetto](https://github.com/pcotret/BluetoothGhetto/blob/master/img/bluetoothghetto.png)
+# BluetoothGhetto â€“ A tiny Bluetooth-enabled ghetto blaster
 
 ### Arnaud Droulers & Martin Hintzy
-CentraleSupélec, Rennes campus, 2016/2017
+CentraleSupÃ©lec, Rennes campus, 2016/2017
 
 This project has been realized by Arnaud Droulers and Martin Hintzy for a short-term project under the supervision of Dr. Pascal Cotret.
 
@@ -16,7 +16,7 @@ After some searches on the Internet, we have found two interesting tutorials (th
 
 Our BluetoothGhetto was born! We just had to gather those two projects and to add a microcontroller with a LED strip to make our project. In the next parts of this tutorial, we will write a few notes about existing project and some details about the microcontroller/LED enhancement.
 
-![box](https://bytebucket.org/pcotret/bluetoothghetto/raw/41c634f787a87c1103966e4d3363ceb837f6b5ee/img/img1.png?token=0756444b064198c0264063a959c943baa66dacc6)
+![box](https://github.com/pcotret/BluetoothGhetto/blob/master/img/img1.png)
 
 ## Bluetooth speaker
 ### Bill of material
@@ -28,13 +28,13 @@ Our BluetoothGhetto was born! We just had to gather those two projects and to ad
 * [CP2102 USB/UART adapter](http://ebay.eu/2phIPib)
 * [ON/OFF/ON 3-positions switch](http://ebay.eu/2p91Ake)
 * [Voltmeter digital display (3,5 - 30V)](http://ebay.eu/2nl9wlZ)
-![schemablue](https://bytebucket.org/pcotret/bluetoothghetto/raw/41c634f787a87c1103966e4d3363ceb837f6b5ee/img/bluetooth.png?token=3fbc6062d6bba2b9927fbdf25562dc1043d2579f)
+![schemablue](https://github.com/pcotret/BluetoothGhetto/blob/master/img/bluetooth.png)
 Just connect as it is done in the schematic: that's it, you have your own Bluetooth speaker!
-![montageblue](https://bytebucket.org/pcotret/bluetoothghetto/raw/41c634f787a87c1103966e4d3363ceb837f6b5ee/img/img2.png?token=154aa8b2e172f8792aefda8cbbb6b187f9f8059e)
+![montageblue](https://github.com/pcotret/BluetoothGhetto/blob/master/img/img2.png)
 
 ## LED color organ
-![fritzing](https://bytebucket.org/pcotret/bluetoothghetto/raw/1a434236a2c33acc36db1458fba4bd645b32421d/img/led_schematic.png?token=72098321f4f2df85ec68bc80ea79365ce1c9839e)
-![spice](https://bytebucket.org/pcotret/bluetoothghetto/raw/1a434236a2c33acc36db1458fba4bd645b32421d/img/led_spice.png?token=9e67b0013ed45dceeb6bb98b76393763aebb81aa)
+![fritzing](https://github.com/pcotret/BluetoothGhetto/blob/master/img/led_schematic.png)
+![spice](https://github.com/pcotret/BluetoothGhetto/blob/master/img/led_spice.png)
 ### How does it work?
 This electronic circuits is basically a combination of 3 filters (sections with transistors) with 3 different cutoff frequencies. We start by the highest frequencies.
 
@@ -45,15 +45,15 @@ This electronic circuits is basically a combination of 3 filters (sections with 
 We wanted to do a SPICE simulation to check the behavior of each filter. However, it failed for an unknown reason. We took values as it was written in the original tutorial.
 
 BluetoothGhetto is born :)
-![bg](https://bytebucket.org/pcotret/bluetoothghetto/raw/0c171d81bca5cf28dd98fa321e532835e9d74aa1/img/img3.png?token=0640bb251e05685eaf7f782b36449a144a976e2b)
+![bg](https://github.com/pcotret/BluetoothGhetto/blob/master/img/img3.png)
 
 ## Make it shine!
-![rgb](https://bytebucket.org/pcotret/bluetoothghetto/raw/037e8288e5ac2e8ee610e01715ab0d2b80271e02/img/img4.png?token=c3094bd66459f45066d746e918594ae8e0565566)
+![rgb](https://github.com/pcotret/BluetoothGhetto/blob/master/img/img4.png)
 
 The next idea was to put a few WS2812 RGB LEDs on the wooden box instead of basic RGB LEDs in the circuit. As a consequence, we had to use a microcontroller to drive such a LED strip. Of course, the whole processing may be performed on the microcontroller...
 We decided to use an Arduino Nano as in the schematic below, it turns out that even a Lilypad would do the trick.
 
-![strip](https://bytebucket.org/pcotret/bluetoothghetto/raw/009fd28288cbd8828356b82e9af863fefc7f8627/img/led_strip.png?token=bb073848c77867e348038c286bb62c2c3e70bcf3)
+![strip](https://github.com/pcotret/BluetoothGhetto/blob/master/img/led_strip.png)
 
 The Arduino code implemented in the Arduino is available here:
 
@@ -126,7 +126,7 @@ void loop()
       strip.setPixelColor(i,255,102,102);
     for(i=5;i<9;i++)   // Intensity level 3
       strip.setPixelColor(i,0,0,0);
-    for(i=31;i<35;i++) // niveau d'intensité 3
+    for(i=31;i<35;i++) // niveau d'intensitÃ© 3
       strip.setPixelColor(i,0,0,0);
   }
   // 1st, 2nd and 3rd levels reached (red, red/orange, orange)
