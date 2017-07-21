@@ -55,7 +55,7 @@ We decided to use an Arduino Nano as in the schematic below, it turns out that e
 
 ![strip](https://github.com/pcotret/BluetoothGhetto/blob/master/img/led_strip.png)
 
-The Arduino code implemented in the Arduino is available here:
+The Arduino code implemented in the Arduino is available here: https://github.com/pcotret/BluetoothGhetto/blob/master/docs/ledstrip/ledstrip.ino
 
 ```C++
 // Libraries
