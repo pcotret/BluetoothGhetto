@@ -28,6 +28,7 @@ Our BluetoothGhetto was born! We just had to gather those two projects and to ad
 * [CP2102 USB/UART adapter](http://ebay.eu/2phIPib)
 * [ON/OFF/ON 3-positions switch](http://ebay.eu/2p91Ake)
 * [Voltmeter digital display (3,5 - 30V)](http://ebay.eu/2nl9wlZ)
+
 ![schemablue](https://github.com/pcotret/BluetoothGhetto/blob/master/img/bluetooth.png)
 Just connect as it is done in the schematic: that's it, you have your own Bluetooth speaker!
 ![montageblue](https://github.com/pcotret/BluetoothGhetto/blob/master/img/img2.png)
